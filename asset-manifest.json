@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/planetspark/static/css/main.bb7005bb.chunk.css",
+    "main.js": "/planetspark/static/js/main.be0c2805.chunk.js",
+    "main.js.map": "/planetspark/static/js/main.be0c2805.chunk.js.map",
+    "runtime-main.js": "/planetspark/static/js/runtime-main.35a9b0e5.js",
+    "runtime-main.js.map": "/planetspark/static/js/runtime-main.35a9b0e5.js.map",
+    "static/js/2.f6095c58.chunk.js": "/planetspark/static/js/2.f6095c58.chunk.js",
+    "static/js/2.f6095c58.chunk.js.map": "/planetspark/static/js/2.f6095c58.chunk.js.map",
+    "index.html": "/planetspark/index.html",
+    "static/css/main.bb7005bb.chunk.css.map": "/planetspark/static/css/main.bb7005bb.chunk.css.map",
+    "static/js/2.f6095c58.chunk.js.LICENSE.txt": "/planetspark/static/js/2.f6095c58.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35a9b0e5.js",
+    "static/js/2.f6095c58.chunk.js",
+    "static/css/main.bb7005bb.chunk.css",
+    "static/js/main.be0c2805.chunk.js"
+  ]
+}
