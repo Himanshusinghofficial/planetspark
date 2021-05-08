@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+}
+.title {
+  width: 30%;
+}
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 70%;
+  text-transform: capitalize;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  text-transform: capitalize;
+}
+
+.board {
+  height: 330px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 6px 6px 10px gray;
+}
+
+.tile {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5em;
+  
+}
+
+#tile0 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#tile1 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#tile2 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#tile3 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#tile4 {
+  border: 2px solid black;
+}
+#tile5 {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#tile6 {
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+#tile7 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+#tile8 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.game p {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: white;
+  width: 400px;
+  box-shadow: 6px 6px 2px gray;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+@media only screen and (max-width: 400px) {
+  .title {
+    display: flex;
+    font-size: 0.2em !important;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: large;
+  }
+  .statistics {
+    display: flex;
+  }
+  .statistics h2 {
+    font-size: medium;
+  }
+  .board {
+    height: 330px;
+    width: 330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 10px gray;
+  }
+
+}
