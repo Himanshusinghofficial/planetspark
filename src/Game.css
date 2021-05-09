@@ -1,0 +1,179 @@
+body {
+  background-color: #f7f5f5;
+  font-family: "Patrick Hand";
+  margin: 0;
+}
+
+.game-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.players-score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.players-btn {
+  margin-top: -10%;
+}
+
+.game-status {
+  font-size: 25px;
+}
+
+.game-name {
+  margin-top: 15%;
+  font-size: 35px;
+}
+
+.game-board {
+  background-color: rgba(0, 0, 0, .2);
+  margin: 50px auto;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 30px;
+}
+
+.square {
+  background-color: white;
+  transition: background-color .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: animateIn;
+  animation-duration: 350ms;
+}
+
+.square:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.X, .O {
+  font-size: 45px;
+  position: absolute;
+  animation-name: animateIn;
+  animation-duration: 450ms;
+}
+
+.X, .color-tomato {
+  color: tomato;
+}
+
+.O, .color-light-blue {
+  color: #33dbff;
+}
+
+button.margin-right {
+  margin-right: 40px;
+}
+
+.btn {
+  font-family: 'Patrick Hand';
+  font-size: 18px;
+  color: white;
+  background-color: tomato;
+  border: 1px solid tomato;
+  padding: 10px 20px;
+  transition: border, color, 0.5s;
+  border-radius: 15px;
+}
+
+.btn:hover, .btn:focus {
+  cursor: pointer;
+  color: white;
+  background-color: #f2583d;
+  border: 1px solid #f2583d;
+  transition: border, color, 0.3s;
+  transform: translateY(2px);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.p1, .p2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.p1 {
+  color: tomato;
+  margin-left: 5%;
+}
+
+.p2 {
+  color: #33DBFF;
+  margin-right: 5%;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .game-container {
+    height: 70vh;
+  }
+
+  .game-name {
+    margin-top: 60%;
+    font-size: 30px;
+  }
+
+  .players-btn {
+    margin-top: -35%;
+  }
+
+  .game-status {
+    font-size: 20px;
+  }
+
+  .game-board {
+    width: 175px;
+    height: 175px;
+  }
+
+  .X, .O {
+    font-size: 30px;
+  }
+
+  .p1, .p2 {
+    font-size: 17px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+
+  .square:hover {
+    background-color: white;
+  }
+}
